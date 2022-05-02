@@ -1,0 +1,140 @@
+.condition-bar {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.image {
+    padding: 0px 5px;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+}
+
+.logoname {
+    padding: 0px 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.topheader {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    flex: 1;
+}
+
+.bottomheader {
+    border-top: 1px solid #0004;
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.topheaderFilter {
+    display: unset;
+}
+
+
+/* searchbar */
+
+.searchbar {
+    flex: 1;
+    margin: 0px 10px;
+    height: 32px;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: row;
+    background-color: #fff;
+}
+
+.textbox {
+    background-color: transparent;
+    margin-left: 1em;
+    border: none;
+    padding: 0;
+    color: rgba(0, 0, 0, .87);
+    outline: none;
+    display: flex;
+    flex: 1;
+    -webkit-tap-highlight-color: transparent;
+    font: 14px arial, sans-serif;
+}
+
+
+/* filter modal */
+
+.filters {
+    display: inline-block;
+    align-items: center;
+    padding: 5px;
+}
+
+.custom_dropdown {
+    margin-right: 10px;
+    outline: none;
+}
+
+.custom_dropdown select {
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    color: #777;
+    background-color: white;
+    font: 14px arial, sans-serif;
+    width: 20vw;
+    height: 32px;
+    padding-left: 1em;
+    margin: 0;
+    text-overflow: '';
+    -webkit-appearance: button;
+}
+
+.custom_dropdown::before,
+.custom_dropdown::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+
+@media(max-width: 629px) {
+    .condition-bar {
+        grid-template-columns: 40% 60%;
+    }
+    .logoname {
+        display: none;
+    }
+    .topheaderFilter {
+        display: none;
+    }
+    .bottomheader {
+        display: unset;
+    }
+    /* searchbar */
+    .searchbar {
+        padding: 0px 10px;
+    }
+    .textbox {
+        font-size: 12px;
+    }
+    /* filter modal */
+    .custom_dropdown select {
+        font-size: 12px;
+    }
+}

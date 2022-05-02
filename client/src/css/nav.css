@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Chunk;
+    src: url('../assets/font/chunk-master/Chunk\ Five\ Print.otf');
+}
+
+.navbar {
+    background-color: rgb(243, 206, 161, 0.5);
+    padding: 5px 10px;
+}
+
+.action-box {
+    margin-left: auto;
+}
+
+.action-box a {
+    display: inline;
+    font-family: Chunk;
+    font-weight: 50;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.7) !important;
+    transition: 0.4s;
+}
+
+.action-box a:hover {
+    color: black !important;
+}
+
+.nav-button {
+    border: none;
+    background-color: transparent;
+    font-family: Chunk;
+    font-weight: 50;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.7) !important;
+    transition: 0.4s;
+}
+
+.nav-button:hover {
+    color: black !important;
+}
+
+.navbrand {
+    font-family: Chunk;
+    color: rgba(0, 0, 0, 0.7) !important;
+    font-size: 2em;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.navbrand:hover {
+    color: black !important;
+}
+
+@media screen and (max-width: 900px) {
+    .navbrand {
+        font-size: 1em;
+    }
+    .action-box a {
+        font-size: 0.7em;
+    }
+    .nav-button {
+        font-size: 0.7em;
+    }
+}

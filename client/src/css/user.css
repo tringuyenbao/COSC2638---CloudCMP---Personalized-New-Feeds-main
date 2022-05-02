@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Chunk;
+    src: url('../assets/font/chunk-master/Chunk\ Five\ Print.otf');
+}
+
+@font-face {
+    font-family: Chunk-sm;
+    src: url('../assets/font/chunk-master/Chunk.otf');
+}
+
+.user-container {
+    height: 100vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 10vh;
+}
+
+.user-title {
+    text-align: center;
+    font-family: Chunk;
+    font-weight: 50;
+    font-size: 2em;
+}
+
+.user-box {
+    padding: 6vw;
+    background-color: white;
+    box-shadow: inset;
+    text-align: center;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.user-interest {
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1em;
+}
+
+.interest-click {
+    font-family: Chunk-sm;
+    padding: 4px;
+    border: solid 1px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.interest-click:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.interest {
+    background-color: black;
+    color: white;
+    font-family: Chunk-sm;
+    padding: 4px;
+    border: solid 1px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .user-interest {
+        grid-template-columns: 30% 30% 30%;
+    }
+    .user-container {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .interest {
+        font-size: 7px
+    }
+    .interest-clicked {
+        font-size: 7px
+    }
+}

@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Chunk;
+    src: url('../assets/font/chunk-master/Chunk\ Five\ Print.otf');
+}
+
+.auth-container {
+    height: 100vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 10vh;
+}
+
+.auth-title {
+    text-align: center;
+    font-family: Chunk;
+    font-weight: 50;
+    font-size: 2em;
+}
+
+.auth-form {
+    padding: 6vw;
+    background-color: white;
+    box-shadow: inset;
+    text-align: center;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin: 2vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.form-group label {
+    font-family: Chunk;
+    font-weight: 10;
+    font-size: 1em;
+}
+
+.button {
+    margin: 10px;
+    padding: 10px;
+    border: solid 0.5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.button:hover {
+    border: solid 0.5px rgba(0, 0, 0, 1);
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .auth-container {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .form-group {
+        font-size: 10px;
+    }
+    .auth-line {
+        font-size: 12px;
+    }
+}
